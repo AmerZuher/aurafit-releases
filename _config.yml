@@ -1,0 +1,8 @@
+# GitHub Pages settings for AmerZuher/aurafit-releases.
+# Settings → Pages → Build and deployment: "Deploy from a branch", branch main, folder / (root).
+title: AuraFit
+description: A food diary and fitness tracker for Android, in English and Arabic.
+theme: jekyll-theme-primer
+# The README is for GitHub; the site's home page is index.md.
+exclude:
+  - README.md
