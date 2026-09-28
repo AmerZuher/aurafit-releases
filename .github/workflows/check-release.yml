@@ -1,0 +1,42 @@
+# Checks each published release has exactly what the in-app updater needs
+# (src/lib/updates.ts in the code repository): a tag "v<major>.<minor>.<patch>"
+# and an asset "auraFit_V<same version>.apk". If not, this run fails and GitHub
+# emails you, so a release the app would silently ignore gets fixed at once.
+# It only reads the release: no secrets, no builds.
+name: Check release
+
+on:
+  release:
+    types: [published, edited]
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Tag, title and APK name
+        env:
+          TAG: ${{ github.event.release.tag_name }}
+          TITLE: ${{ github.event.release.name }}
+          PRERELEASE: ${{ github.event.release.prerelease }}
+          ASSETS: ${{ toJSON(github.event.release.assets.*.name) }}
+        run: |
+          set -eu
+          ok=1
+          if ! echo "$TAG" | grep -Eq '^v[0-9]+\.[0-9]+\.[0-9]+$'; then
+            echo "::error::Tag '$TAG' must be v<major>.<minor>.<patch>, e.g. v2.0.0."; ok=0
+          fi
+          if [ "$TITLE" != "$TAG" ]; then
+            echo "::warning::Title '$TITLE' should be the same as the tag '$TAG'."
+          fi
+          if [ "$PRERELEASE" = "true" ]; then
+            echo "::error::It's marked as a pre-release: the app only looks at the latest normal release."; ok=0
+          fi
+          apk="auraFit_V${TAG#v}.apk"
+          if ! echo "$ASSETS" | grep -q "\"$apk\""; then
+            echo "::error::No asset named $apk. Assets: $ASSETS"; ok=0
+          fi
+          [ "$ok" = 1 ] && echo "Release $TAG has $apk: the in-app updater can use it."
+          [ "$ok" = 1 ]

@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Account, subscription or privacy question
+    url: mailto:amerzuher@outlook.com
+    about: Email — anything about your account shouldn't go on a public page.
+  - name: Delete your account
+    url: https://amerzuher.github.io/aurafit-releases/delete-account/
+    about: In the app, or by email without it.
+  - name: Privacy policy
+    url: https://amerzuher.github.io/aurafit-releases/privacy/
+    about: What AuraFit keeps, and what leaves your phone.

@@ -1,0 +1,47 @@
+name: Report a problem
+description: Something in AuraFit doesn't work as it should.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping make AuraFit better. **Please don't post your email, diary data or screenshots with personal details** — this page is public. For account questions, email amerzuher@outlook.com instead.
+  - type: input
+    id: version
+    attributes:
+      label: AuraFit version
+      description: Settings › About shows it (e.g. 2.0.0).
+    validations:
+      required: true
+  - type: input
+    id: phone
+    attributes:
+      label: Phone and Android version
+      placeholder: e.g. Samsung Galaxy A54, Android 14
+    validations:
+      required: true
+  - type: dropdown
+    id: language
+    attributes:
+      label: App language
+      options: [English, العربية]
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What you expected, and what happened instead. Include any message the app showed.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to see it
+      placeholder: |
+        1. Open Meal Logs
+        2. Tap + on Breakfast
+        3. …
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: Optional. Drag images here — without personal details.
