@@ -97,6 +97,10 @@ In the app: **Settings › Account › Delete account**. Without the app: [see h
 
 Each version's changes are in its [release notes](https://github.com/AmerZuher/aurafit-releases/releases).
 
+## Marketing & Media
+
+Promotional materials, posters, and brand assets are available in the [**Gallery**](GALLERY.md) for marketing, press kits, and social media use.
+
 ## Help and feedback
 
 - **Found a problem or have an idea?** [Open an issue](https://github.com/AmerZuher/aurafit-releases/issues/new/choose) — there's a short form for each.
