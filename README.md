@@ -1,6 +1,6 @@
 <div align="center" markdown="1">
 
-<img src="assets/gallery/logo.png" alt="AuraFit logo — a geometric snow leopard with an ice-crystal crown" width="128" />
+<img src="gallery/logo.png" alt="AuraFit logo — a geometric snow leopard with an ice-crystal crown" width="128" />
 
 # AuraFit
 
@@ -12,9 +12,9 @@ For Android, in English and Arabic. Your diary stays on your phone.
 ![Android 8.0+](https://img.shields.io/badge/Android-8.0%2B-3ddc84?style=for-the-badge&logo=android&logoColor=white)
 ![English · العربية](https://img.shields.io/badge/English%20%C2%B7%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9-informational?style=for-the-badge)
 
-<img src="assets/gallery/home.jpg" alt="Home: daily goal ring, macros, water and weight" width="240" />
-<img src="assets/gallery/meal-logs.jpg" alt="Meal Logs: each meal with its calories, macros and entries" width="240" />
-<img src="assets/gallery/workout-log.jpg" alt="Workout log: sets pre-filled from last time" width="240" />
+<img src="gallery/home.jpg" alt="Home: daily goal ring, macros, water and weight" width="240" />
+<img src="gallery/meal-logs.jpg" alt="Meal Logs: each meal with its calories, macros and entries" width="240" />
+<img src="gallery/workout-log.jpg" alt="Workout log: sets pre-filled from last time" width="240" />
 
 </div>
 
@@ -27,13 +27,23 @@ For Android, in English and Arabic. Your diary stays on your phone.
 - 📈 **Progress you can trust.** This week vs. last for calories, protein, water, workouts, weight and body composition, InBody results compared test to test, and — with Health Connect — steps, activity and sleep. An optional AI coach turns your own numbers into tips and charts.
 - 🎨 **Yours.** 8 themes, dark and light, card colors, kcal or kJ, and full Arabic with right-to-left layout.
 
+## Marketing & Poster
+
+<div align="center">
+
+![AuraFit Poster - Food diary, workouts and body progress in one calm app](gallery/poster.webp)
+
+[View Interactive Version](gallery/poster.html)
+
+</div>
+
 ## Screenshots
 
 |                        Meal plan                         |                      Workout programs                       |                          Body                          |
 | :------------------------------------------------------: | :---------------------------------------------------------: | :----------------------------------------------------: |
-| <img src="assets/gallery/meal-plan.jpg" width="230" alt="Meal plan with the week strip" /> | <img src="assets/gallery/workout-programs.jpg" width="230" alt="Program finder" /> | <img src="assets/gallery/body.jpg" width="230" alt="Goal weight and healthy range" /> |
+| <img src="gallery/meal-plan.jpg" width="230" alt="Meal plan with the week strip" /> | <img src="gallery/workout-programs.jpg" width="230" alt="Program finder" /> | <img src="gallery/body.jpg" width="230" alt="Goal weight and healthy range" /> |
 |                       **Insights**                       |                      **Light theme**                        |                  **العربية — Arabic**                  |
-| <img src="assets/gallery/insights.jpg" width="230" alt="This week vs last week" /> | <img src="assets/gallery/home-light.jpg" width="230" alt="Home in a light theme" /> | <img src="assets/gallery/home-arabic.jpg" width="230" alt="Home in Arabic, right to left" /> |
+| <img src="gallery/insights.jpg" width="230" alt="This week vs last week" /> | <img src="gallery/home-light.jpg" width="230" alt="Home in a light theme" /> | <img src="gallery/home-arabic.jpg" width="230" alt="Home in Arabic, right to left" /> |
 
 <sub>Screenshots use sample data.</sub>
 
